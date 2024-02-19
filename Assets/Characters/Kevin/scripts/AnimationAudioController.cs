@@ -7,7 +7,7 @@ public class AnimationAudioController : MonoBehaviour
     public AudioClip audioClip2;
     public AudioClip audioClip3;
     public AudioClip audioClip4;
-    //public AudioClip audioClip5;
+    public AudioClip audioClip5;
 
 
     private AudioSource audioSource;
@@ -50,6 +50,12 @@ public class AnimationAudioController : MonoBehaviour
     public void PlayAudioClip4()
     {
         audioSource.clip = audioClip4;
+        audioSource.Play();
+    }
+
+    public void PlayAudioClip5()
+    {
+        audioSource.clip = audioClip5;
         audioSource.Play();
     }
 
